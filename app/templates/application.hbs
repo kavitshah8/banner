@@ -1,6 +1,18 @@
 {{outlet}}
 
-<ul class="nav nav-pills">
+{{!-- <ul class="nav nav-pills">
   <li class="active"><a href="#">Home</a></li>
   <li> <a href="#"> Upload</a></li>
 </ul>
+ --}}
+{{input value=secret class='secret-value'}}
+
+<button class='check-password' {{action checkPassword}}>
+	Check Password
+</button>
+
+<hr>
+
+{{#if unlocked}}
+	<img class='surprise' {{bind-attr src=url}}>
+{{/if}}
