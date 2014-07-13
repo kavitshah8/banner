@@ -5,6 +5,7 @@
   <li> <a href="#"> Upload</a></li>
 </ul>
  --}}
+
 {{input value=secret class='secret-value'}}
 
 <button class='check-password' {{action checkPassword}}>
@@ -14,5 +15,9 @@
 <hr>
 
 {{#if unlocked}}
-	<img class='surprise' {{bind-attr src=url}}>
+	{{#link-to }}
+		<a href="http://rewards.jebbit.com/pages/image_links?image_url=http://images.jebbit.com/jebbit/Revs.jpg&link_url=http://goo.gl/j6tHwF" target="_blank">
+			<img class='surprise' {{bind-attr src=url}}>
+		</a>
+	{{/link-to}}
 {{/if}}
