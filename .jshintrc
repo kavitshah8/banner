@@ -2,7 +2,9 @@
   "predef": {
     "document": true,
     "window": true,
-    "BannerENV": true
+    "BannerENV": true,
+    "Ember":true,
+    "Em":true
   },
   "browser" : true,
   "boss" : true,
