@@ -21,13 +21,13 @@ test( 'by default the image is not shown', function() {
 test( 'image is shown when password is correct', function() {
 	visit('/');
 	
-	fillIn('input.secret-value','meow');
+	fillIn('input.secret-value','Jebbit.Ads!');
 	click('button.check-password');
 	andThen(function () {
 		equal(find('.surprise').length,1);
 	});
 
-	fillIn('input.secret-value','meow2');
+	fillIn('input.secret-value','Not Jebbit.Ads!');
 	click('button.check-password');
 	andThen(function(){
 		equal(find('.surprise').length,0);
